@@ -8,9 +8,9 @@ This project analyzes book metadata and reviews to gain insights through data cl
 ## 📁 Part 1: Book Metadata & Review Cleaning
 
 ### 🔹 Features:
-- Loads and merges datasets: `books_data.csv` and `Books_rating.csv`
+- Loads and merges datasets: `books_data.csv` and `books_ratings.csv`
 - Cleans and processes fields like `title`, `authors`, `description`, and `ratingsCount`
-- Saves cleaned outputs as `cleanBookData.csv` and `cleanBookRating.csv`
+- Saves cleaned outputs as `clean_books.csv` and `clean_ratings.csv`
 
 ### 🔹 Output Files:
 - `clean_books.csv`
