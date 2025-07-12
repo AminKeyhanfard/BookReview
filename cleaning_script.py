@@ -17,7 +17,7 @@ class BookReviewProject:
         pd.set_option('display.max_rows', None)
 
         self.books_data = pd.read_csv("books_data.csv")
-        self.books_ratings = pd.read_csv("Books_rating.csv")
+        self.books_ratings = pd.read_csv("books_ratings.csv")
 
         print("\nBooks Data Info:")
         self.books_data.info()
