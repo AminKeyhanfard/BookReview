@@ -71,7 +71,7 @@ python sentiment_analysis.py         # For Part 2
 ├── cleaning_script.py
 ├── sentiment_analysis.py
 ├── Tokenizer.py
-├── README.md / README.docx
+├── README.md
 ```
 
 ---
