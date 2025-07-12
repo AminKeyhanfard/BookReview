@@ -12,7 +12,7 @@ This project analyzes book metadata and reviews to gain insights through data cl
 - Cleans and processes fields like `title`, `authors`, `description`, and `ratingsCount`
 - Saves cleaned outputs as `clean_books.csv` and `clean_ratings.csv`
 
-⚠️ `books_data.csv` and `books_ratings.csv` in the repository are limited to 1000 rows due to size restrictions.
+⚠️ `books_data.csv` and `books_ratings.csv` in the repository are limited to 10000 rows due to size restrictions.
 
 ### 🔹 Output Files:
 - `clean_books.csv`
