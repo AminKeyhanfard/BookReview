@@ -1,5 +1,5 @@
 
-# 📚 Book Review Data Analysis Project
+# 📚 Book Review: Sentiment Analysis using Python
 
 This project analyzes book metadata and reviews to gain insights through data cleaning, visualization, sentiment analysis, and predictive modeling. It is split into two main components:
 
