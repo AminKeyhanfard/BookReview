@@ -1,53 +1,85 @@
-Book Review Data Analysis Project
-📁 Project Structure
+
+# 📚 Book Review Data Analysis Project
+
+This project analyzes book metadata and reviews to gain insights through data cleaning, visualization, sentiment analysis, and predictive modeling. It is split into two main components:
+
+---
+
+## 📁 Part 1: Book Metadata & Review Cleaning + Visualization
+
+### 🔹 Features:
+- Loads and merges datasets: `books_data.csv` and `Books_rating.csv`
+- Cleans and processes fields like `title`, `authors`, `description`, and `ratingsCount`
+- Saves cleaned outputs as `cleanBookData.csv` and `cleanBookRating.csv`
+- Generates histograms of rating distributions
+- Produces a word cloud from book descriptions
+
+### 🔹 Output Files:
+- `cleanBookData.csv`
+- `cleanBookRating.csv`
+
+### 🔹 Visuals:
+- Ratings histogram (linear and log-scaled)
+- Word cloud of book descriptions
+
+### 📦 Required Libraries:
+```bash
+pandas, matplotlib, wordcloud
+```
+
+---
+
+## 🧠 Part 2: Sentiment Analysis and Rating Prediction
+
+### 🔹 Features:
+- Converts `review/score` to polarity sentiment: Positive (4–5), Neutral (3), Negative (1–2)
+- Cleans review text (removes stopwords, punctuation)
+- Generates frequency-based word clouds for positive/negative/neutral reviews
+- Trains and evaluates a logistic regression classifier for:
+    - Predicting sentiment (`+1`, `-1`)
+    - Predicting actual review scores (1–5)
+
+### 🔹 Model:
+- TF-IDF Vectorization
+- Logistic Regression (from scikit-learn)
+- Random sampling for balanced classification
+
+### 🔹 Outputs:
+- Word clouds by polarity (summary and text)
+- Rating distribution histogram
+- Accuracy scores for:
+    - Sentiment classification
+    - Rating prediction
+
+### 📦 Required Libraries:
+```bash
+pandas, numpy, matplotlib, wordcloud, sklearn
+Tokenizer.py (custom tokenizer module)
+```
+
+### ▶️ How to Run:
+```bash
+python main_script.py            # For Part 1
+python sentiment_analysis.py     # For Part 2
+```
+
+---
+
+## 📌 Folder Structure:
+```
 .
-├── book_review_project.py     # Main script
-├── books_data.csv             # Raw book metadata
-├── Books_rating.csv           # Raw book ratings and reviews
-├── clean_books.csv            # Cleaned metadata (generated)
-├── clean_ratings.csv          # Cleaned ratings data (generated)
-└── README.md                  # Project documentation
-📌 Features
-- 📖 Data Cleaning  
-  Handles missing values, renames columns, standardizes data types, and filters relevant fields.
-  
-- 📊 Visualizations  
-  - Histograms of rating counts (including log-scale)
-  - Word cloud from book descriptions
-
-- 💾 Data Export  
-  Saves cleaned datasets to `clean_books.csv` and `clean_ratings.csv`.
-🔧 Requirements
-Install the required libraries with:
-
-```
-pip install pandas matplotlib wordcloud
-```
-🚀 How to Run
-1. Ensure `books_data.csv` and `Books_rating.csv` are in the same directory.
-2. Run the script:
-
-```
-python book_review_project.py
+├── books_data.csv
+├── Books_rating.csv
+├── cleanBookData.csv
+├── cleanBookRating.csv
+├── main_script.py
+├── sentiment_analysis.py
+├── Tokenizer.py
+├── README.md / README.docx
 ```
 
-3. View terminal output for data summaries, and see the visualizations displayed in new windows.
-📈 Example Outputs
-- Histogram of Ratings Count
-- Log-Scaled Histogram
-- Word Cloud of Book Descriptions
-📚 Data Sources
-This project uses two datasets:
-- `books_data.csv` – Book metadata (title, authors, publisher, categories, ratings count)
-- `Books_rating.csv` – User-generated ratings and reviews
+---
 
-*Note: Ensure data is properly licensed and anonymized if sourced externally.*
-💡 Future Improvements
-- Add sentiment analysis for user reviews  
-- Combine metadata with rating scores for deeper insights  
-- Build a simple recommendation engine
-🧑‍💻 Author
-Developed by Amin Keyhanfard  
-📌 GitHub: https://github.com/AminKeyhanfard
-
-Feel free to explore more projects and reach out with questions or collaboration ideas!
+## 🙌 Author
+**Amin Keyhanfard**  
+GitHub: [@AminKeyhanfard](https://github.com/AminKeyhanfard)
