@@ -74,8 +74,3 @@ python sentiment_analysis.py         # For Part 2
 ├── README.md
 ```
 
----
-
-## 🙌 Author
-**Amin Keyhanfard**  
-GitHub: [@AminKeyhanfard](https://github.com/AminKeyhanfard)
